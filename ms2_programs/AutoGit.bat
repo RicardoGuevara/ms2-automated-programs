@@ -4,6 +4,7 @@ cls
 title Rick Auto_git_commiter
 echo ___________________________________________________________________
 echo Bienvenido a Auto_Git, escriba la letra entre parentesis y presione enter para seleccionar:
+echo recuerde que debe tener previamente instalado git, en otro caso el programa no va a funcionar
 
 :menu
 echo (i) ingresar una ruta directa
@@ -11,10 +12,10 @@ echo (s) ingresar manualmente
 echo (r) reiniciar el progrma
 echo (x) salir
 set/p"var=>>" 
-if %var%==i goto ruta
-if %var%==s goto directorio
-if %var%==r goto ini
-if %var%==x goto exit_door
+  if %var%==i goto ruta
+  if %var%==s goto directorio 
+  if %var%==r goto ini
+  if %var%==x goto exit_door
 echo ??? no te entiendo...
 goto menu
 
@@ -34,9 +35,9 @@ echo (d) ingresar a uno de los directorios
 echo (a) ya estamos aquí
 echo (r) reiniciar el progrma
 set/p"direc=>>" 
-if %direc%==d goto ingresar
-if %direc%==a goto menugit
-if %direc%==r goto ini
+  if %direc%==d goto ingresar
+  if %direc%==a goto menugit
+  if %direc%==r goto ini
 echo ??? no te entiendo...
 goto menudirectorios
 
